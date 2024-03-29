@@ -12,14 +12,16 @@
 
 int main(void)
 {
+	int i=1;
 	SystemInit();
 	LcdInit();
 	LcdPuts(LCD_LINE1, "Yash Indore");
 	LcdPuts(LCD_LINE2, " GOD BLESS YOU ");
-	while(1)
+	while(i<=40)
 	{
 		LcdWrite(LCD_CMD,LCD_SHIFT);
 		DelayMs(500);
+		i++;
 	}
 	return 0;
 }
